@@ -10,6 +10,11 @@ const db = new PouchDB(
 const getCars = cb =>
   listDocs({ include_docs: true, startkey: 'car_', endkey: 'car_\ufff0' }, cb)
 
+/*
+const getMfgs = cb =>
+    listDocs({ include_docs: true, startkey: 'mfg_', endkey: 'mfg_\ufff0' }, cb)
+*/
+
 const getMfgs = cb =>
   listDocs(
     { include_docs: true, startkey: 'mfg_', endkey: 'mfg_\ufff0' },
